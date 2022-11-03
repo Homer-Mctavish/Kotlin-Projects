@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentDetail">
+
+    <ImageView
+        android:id="@+id/sd_pic"
+        android:layout_width="313dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/male" />
+
+    <TextView
+        android:id="@+id/sd_name"
+        android:layout_width="216dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:text="First Last"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd_pic"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/sd_phone"
+        android:layout_width="237dp"
+        android:layout_height="59dp"
+        android:text="555-555-5555"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd_name"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/sd_email"
+        android:layout_width="177dp"
+        android:layout_height="56dp"
+        android:text="firstLastxx@gmail.com"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd_phone"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <CheckBox
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_gravity="left">
+
+    </CheckBox>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
